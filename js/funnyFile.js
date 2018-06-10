@@ -1,10 +1,9 @@
-function pickStory() {
-    let storyChoice = document.getElementById("story").value;
-    switch (storyChoice) {
-        case 1:
-            story1.style.display = 'inline-block';
-            break;
-
-    }
+function pickStory(that) {
+  if (that.value == 1) {
+      document.getElementById("story1").style.display = "block";
+  }
+  else {
+      document.getElementById("story1").style.display = "none";
+  }
 }
 
