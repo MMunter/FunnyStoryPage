@@ -2,9 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Funny Story Page</title>
 </head>
 <body>
+    <h1>Welcome To The Funny Story Page! Let's Play!</h1>
+    <label class="story" for="story">Choose Your Story
+        <select id="story">
+            <option value="0">Story Options</option>
+            <option value="1">Story #1</option>
+            <option value="2">Story #2</option>
+            <option value="3">Story #3</option>
+        </select>
+    </label>
 
+    <div id="story1" style="display: none">
+        <label for="noun">Enter a noun.
+            <input id="noun" type="text" name="noun" placeholder="Enter a noun.">
+        </label>
+        <label for="verb">Enter a verb.
+            <input id="verb" type="text" name="verb" placeholder="Enter a verb.">
+        </label>
+    </div>
+
+    <p id="demo"></p>
+
+
+    <script src="js/funnyFile.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 </body>
 </html>
