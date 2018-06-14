@@ -9,13 +9,13 @@
     <label class="story" for="story">Choose Your Story
         <select id="story" onchange="pickStory(this);">
             <option value="0">Story Options</option>
-            <option value="1">Story #1</option>
-            <option value="2">Story #2</option>
-            <option value="3">Story #3</option>
+            <option value="1">Wedding Vows</option>
+            <option value="2">Jack & Jill</option>
+            <option value="3">Letter to A Neighbor</option>
         </select>
     </label>
 
-    <div id="story1" style="display: none;">
+    <div id="vows" style="display: none;">
         <label for="name1">Enter a person's name.
             <input id="name1" type="text" name="name1" placeholder="Person #1">
         </label>
@@ -46,12 +46,38 @@
         <label for="verb">Enter a verb.
             <input id="verb" type="text" name="verb" placeholder="Enter a verb.">
         </label>
-        <button id="play">See My Story!</button>
+        <button id="play1">See My Story!</button>
     </div>
+
+    <div id="j&j" style="display: none;">
+        <label for="jnoun1">Enter a noun.
+            <input id="jnoun1" type="text" name="jnoun1" placeholder="Enter a noun.">
+        </label>
+        <label for="jverb1">Enter a verb.
+            <input id="jverb1" type="text" name="jverb1" placeholder="Enter a verb.">
+        </label>
+        <label for="jnoun2">Enter a second noun.
+            <input id="jnoun2" type="text" name="jnoun2" placeholder="Enter another noun.">
+        </label>
+        <label for="jnoun3">Enter one more noun.
+            <input id="jnoun3" type="text" name="jnoun3" placeholder="Enter one last noun.">
+        </label>
+        <label for="jverb2">Enter a verb ending in "ing".
+            <input id="jverb2" type="text" name="jverb2" placeholder="Verb ending in 'ing'.">
+        </label>
+        <button id="play2">See My Story!</button>
+    </div>
+
+    <div id="neighbor" style="display: none;">
+
+    </div>
+
+
 
     <p id="demo"></p>
 
 
     <script src="js/funnyFile.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 </body>
 </html>
