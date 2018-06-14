@@ -18,7 +18,6 @@ function story1(){
     let noun4 = document.getElementById("noun4").value;
     let noun5 = document.getElementById("noun5").value;
     let verb = document.getElementById("verb").value;
-    element.style.b
    document.getElementById("demo").innerHTML = "I, " + name1 + ", take thee, " + name2 + ", to be my wedded " + noun1 + ", to have and to hold from this " + noun2 + " forward, for " + adj + ", for " + adj2 + ", for richer, for poorer, in " + noun3 + " and in " + noun4 + ", til " + noun5 + " do us " + verb + ".";
 }
 
