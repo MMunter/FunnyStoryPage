@@ -15,6 +15,7 @@ function pickStory(that) {
       showStory("vows");
       hideStory("j&j");
       hideStory("neighbor");
+      console.log("I'm working");
   }
   else if (that.value == 2){
       showStory("j&j");
@@ -25,6 +26,11 @@ function pickStory(that) {
       showStory("neighbor");
       hideStory("vows");
       hideStory("j&j");
+  }
+  else if (that.value == 0){
+      hideStory("vows");
+      hideStory("j&j");
+      hideStory("neighbor");
   }
 }
 
