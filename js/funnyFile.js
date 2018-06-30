@@ -1,8 +1,8 @@
-function hideStory(story) {
+function hide(story) {
     document.getElementById(story).style.display = "none";
 }
 
-function showStory(story) {
+function show(story) {
     document.getElementById(story).style.display = "block";
 }
 
@@ -12,25 +12,25 @@ function button(story, funcName){
 
 function pickStory(that) {
   if (that.value == 1) {
-      showStory("vows");
-      hideStory("j&j");
-      hideStory("neighbor");
+      show("vows");
+      hide("j&j");
+      hide("humpty");
       console.log("I'm working");
   }
   else if (that.value == 2){
-      showStory("j&j");
-      hideStory("vows");
-      hideStory("neighbor");
+      show("j&j");
+      hide("vows");
+      hide("humpty");
   }
   else if (that.value == 3){
-      showStory("neighbor");
-      hideStory("vows");
-      hideStory("j&j");
+      show("humpty");
+      hide("vows");
+      hide("j&j");
   }
   else if (that.value == 0){
-      hideStory("vows");
-      hideStory("j&j");
-      hideStory("neighbor");
+      hide("vows");
+      hide("j&j");
+      hide("humpty");
   }
 }
 
@@ -64,8 +64,16 @@ function story2(){
 //Button for story #2
 button("play2", story2);
 
-// function story3(){
-//     document.getElementById("demo").innerHTML = "Dear Neighbor, %n I know you've heard sounds from my apartment lately. You were probably wondering what they are. Well, they are coming from my new pet " + pnoun1 + " named " + pname + ". " + pname + " is very active at times, especially when I serve " + pfood + ".";
-// }
+function story3(){
+    let hnoun1 = document.getElementById("hnoun1").value;
+    let hadj1 = document.getElementById("hadj1").value;
+    let hnoun2 = document.getElementById("hnoun2").value;
+    let hnoun3 = document.getElementById("hnoun3").value;
+    let hnoun4 = document.getElementById("hnoun4").value;
+    document.getElementById("demo").innerHTML = "Humpty Dumpty sat on a " + hnoun1 + ". Humpty Dumpty had a " + hadj1 + " " + hnoun2 + ". All the king's " + hnoun3 + " and all the king's " + hnoun4 + " couldn't put Humpty together again."
+}
+
+//Button for Story #3
+button("play3", story3);
 
 
